@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNIT Nagpur - Special Lateral Entry 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, .serif-font {
+            font-family: 'Merriweather', serif;
+        }
+        .hero-pattern {
+            background-color: #1e3a8a;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        /* Prank Screen Animations */
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            80% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px) rotate(-5deg); }
+            50% { transform: translateX(10px) rotate(5deg); }
+            75% { transform: translateX(-10px) rotate(-5deg); }
+            100% { transform: translateX(0); }
+        }
+        .pop-in { animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+        .shake-text { animation: shake 0.5s ease-in-out infinite; }
+        
+        #prank-screen {
+            background: repeating-linear-gradient(
+                45deg,
+                #ff0000,
+                #ff0000 20px,
+                #ffcc00 20px,
+                #ffcc00 40px
+            );
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- MAIN OFFICIAL WEBSITE -->
+    <div id="official-website">
+        <!-- Top Bar -->
+        <div class="bg-blue-950 text-white text-xs py-2 px-4 flex justify-between items-center sm:px-8">
+            <div class="flex items-center space-x-4 opacity-80">
+                <span>Government of India</span>
+                <span class="hidden sm:inline">|</span>
+                <span class="hidden sm:inline">Ministry of Education</span>
+            </div>
+            <div class="flex space-x-4 opacity-80">
+                <a href="#" class="hover:underline">Skip to Main Content</a>
+                <a href="#" class="hover:underline">Screen Reader Access</a>
+                <span>A- | A | A+</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="bg-white shadow-md sticky top-0 z-40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <!-- Original VNIT Logo with online fallback -->
+                    <img src="VNIT_logo-2.jpeg" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/en/thumb/0/06/VNIT_logo.png/220px-VNIT_logo.png'" alt="VNIT Logo" class="w-16 h-16 object-contain">
+                    <div>
+                        <h1 class="text-xl sm:text-2xl font-bold text-blue-900 serif-font leading-tight">विश्वेश्वरैया राष्ट्रीय प्रौद्योगिकी संस्थान, नागपुर</h1>
+                        <h2 class="text-sm sm:text-base font-semibold text-gray-700">Visvesvaraya National Institute of Technology, Nagpur</h2>
+                        <p class="text-xs text-gray-500 italic">An Institute of National Importance under Ministry of Education</p>
+                    </div>
+                </div>
+                <div class="mt-4 sm:mt-0 flex space-x-4 hidden lg:flex">
+                    <a href="#" class="text-blue-900 font-medium hover:text-yellow-600 transition">Academics</a>
+                    <a href="#" class="text-blue-900 font-medium hover:text-yellow-600 transition">Departments</a>
+                    <a href="#register-section" class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md font-bold hover:bg-yellow-400 transition shadow-sm">Apply Now</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-pattern text-white py-20 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center">
+                <div class="md:w-3/5 space-y-6">
+                    <div class="inline-block bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-bold tracking-wide uppercase shadow-lg">
+                        Special MoE Initiative 2026
+                    </div>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold serif-font leading-tight">B.Tech in Bio-Medical Engineering<br><span class="text-3xl">(Medical Lateral Entry)</span></h2>
+                    <p class="text-lg text-blue-100 max-w-2xl">
+                        A revolutionary Govt. of India transition program. Students currently enrolled in private BDS, BAMS, BHMS, or BPT courses can now transfer directly to a premier NIT and escape high private fees.
+                    </p>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#register-section" class="bg-white text-blue-900 px-6 py-3 rounded-md font-bold hover:bg-gray-100 transition shadow-lg text-lg flex items-center">
+                            Register Online <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="border border-white text-white px-6 py-3 rounded-md font-bold hover:bg-white hover:text-blue-900 transition shadow-lg text-lg">
+                            Download Brochure
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/5 mt-10 md:mt-0">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="VNIT Campus Campus" class="rounded-xl shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition duration-500">
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Highlights -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-blue-900 serif-font">Program Overview</h3>
+                    <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="bg-blue-100 text-blue-900 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="clock" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Lateral Duration</h4>
+                        <p class="text-gray-600">Direct admission to 2nd year. Complete your B.Tech in 3 years. Previous medical coursework credits will be successfully mapped to our engineering curriculum.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="bg-blue-100 text-blue-900 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="indian-rupee" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Subsidized Fee</h4>
+                        <p class="text-gray-600">Tuition Fee: ₹45,000 per semester. <br>Escape the exorbitant private medical college fees. <i>100% scholarship for top 50 NEET scorers.</i></p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-xl transition duration-300">
+                        <div class="bg-blue-100 text-blue-900 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="building" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Hostel & Facilities</h4>
+                        <p class="text-gray-600">Accommodation in the newly inaugurated Dr. APJ Abdul Kalam Premium Block. Single occupancy, centralized AC, and gigabit Wi-Fi coverage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faculty Section -->
+        <section class="py-16 bg-gray-100 border-y border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-900 serif-font">Distinguished Faculty Board</h3>
+                        <p class="text-gray-600 mt-2">Learn from the pioneers of interdisciplinary research.</p>
+                    </div>
+                    <a href="#" class="text-blue-700 font-semibold hover:underline mt-4 md:mt-0 flex items-center">
+                        View All Faculty <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="Image-255x300-1.jpg" alt="Faculty" class="w-full h-48 object-cover object-top">
+                        <div class="p-4">
+                            <h5 class="font-bold text-gray-900">Dr. S. K. Deshmukh</h5>
+                            <p class="text-sm text-blue-700 mb-2">Dean of Bio-Medical Tech</p>
+                            <p class="text-xs text-gray-500">Ph.D. (IIT Bombay), Post-Doc (MIT)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="IMG_1780-300x277-1.jpg" alt="Faculty" class="w-full h-48 object-cover object-top">
+                        <div class="p-4">
+                            <h5 class="font-bold text-gray-900">Dr. P. R. Gadkari</h5>
+                            <p class="text-sm text-blue-700 mb-2">Head of Research Programs</p>
+                            <p class="text-xs text-gray-500">Ph.D. (IISc Bangalore)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="Sujit-K-Ghosh.jpg" alt="Faculty" class="w-full h-48 object-cover object-top">
+                        <div class="p-4">
+                            <h5 class="font-bold text-gray-900">Dr. Sujit K. Ghosh</h5>
+                            <p class="text-sm text-blue-700 mb-2">Senior Professor</p>
+                            <p class="text-xs text-gray-500">Ph.D. (VNIT Nagpur)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="S-S-Umare.jpg" alt="Faculty" class="w-full h-48 object-cover object-top">
+                        <div class="p-4">
+                            <h5 class="font-bold text-gray-900">Dr. S. S. Umare</h5>
+                            <p class="text-sm text-blue-700 mb-2">Associate Professor</p>
+                            <p class="text-xs text-gray-500">Ph.D. (IIT Delhi)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="JD-Ekhe-Photo.jpg" alt="Faculty" class="w-full h-48 object-cover object-top">
+                        <div class="p-4">
+                            <h5 class="font-bold text-gray-900">Dr. J. D. Ekhe</h5>
+                            <p class="text-sm text-blue-700 mb-2">Assistant Professor</p>
+                            <p class="text-xs text-gray-500">Ph.D. (NIT Rourkela)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section id="register-section" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+                    <div class="bg-blue-900 text-white py-6 px-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold serif-font">Candidate Registration Portal</h3>
+                            <p class="text-blue-200 text-sm mt-1">Application for Medical Lateral Entry (Cycle 1)</p>
+                        </div>
+                        <i data-lucide="file-text" class="w-10 h-10 opacity-50"></i>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-8 rounded-r-md">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i data-lucide="alert-triangle" class="h-5 w-5 text-yellow-500"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-yellow-700 font-medium">
+                                        Please ensure all details match your official documents. Falsification will lead to immediate rejection.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="prank-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Name -->
+                                <div>
+                                    <label for="fullName" class="block text-sm font-semibold text-gray-700">Full Legal Name (as per Aadhaar)</label>
+                                    <input type="text" id="fullName" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm px-4 py-3 bg-gray-50 border" placeholder="e.g. Rahul Sharma">
+                                </div>
+                                
+                                <!-- DOB -->
+                                <div>
+                                    <label for="dob" class="block text-sm font-semibold text-gray-700">Date of Birth</label>
+                                    <input type="date" id="dob" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm px-4 py-3 bg-gray-50 border">
+                                </div>
+
+                                <!-- Current College -->
+                                <div class="md:col-span-2">
+                                    <label for="college" class="block text-sm font-semibold text-gray-700">Current Private Medical College Name</label>
+                                    <input type="text" id="college" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm px-4 py-3 bg-gray-50 border" placeholder="Enter full college name">
+                                </div>
+
+                                <!-- Degree -->
+                                <div>
+                                    <label for="degree" class="block text-sm font-semibold text-gray-700">Currently Pursuing</label>
+                                    <select id="degree" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm px-4 py-3 bg-gray-50 border">
+                                        <option value="">Select Course...</option>
+                                        <option value="BDS">BDS (Dental)</option>
+                                        <option value="BAMS">BAMS (Ayurveda)</option>
+                                        <option value="BHMS">BHMS (Homeopathy)</option>
+                                        <option value="BPT">BPT (Physiotherapy)</option>
+                                        <option value="Other">Other Medical Course</option>
+                                    </select>
+                                </div>
+
+                                <!-- CGPA -->
+                                <div>
+                                    <label for="cgpa" class="block text-sm font-semibold text-gray-700">1st Year SGPA / Percentage</label>
+                                    <input type="text" id="cgpa" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm px-4 py-3 bg-gray-50 border" placeholder="e.g. 8.5">
+                                </div>
+
+                                <!-- Suspicious Field: NEET Score -->
+                                <div class="md:col-span-2 p-4 bg-blue-50 rounded-md border border-blue-100">
+                                    <label for="neetScore" class="block text-sm font-bold text-blue-900">Previous NEET All India Rank & Score <span class="text-red-500">*</span></label>
+                                    <p class="text-xs text-blue-700 mb-2">Mandatory: Used to verify eligibility for escaping private college quotas.</p>
+                                    <input type="text" id="neetScore" required class="mt-1 block w-full border-blue-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm px-4 py-3 bg-white border" placeholder="e.g. Score: 320, Rank: 450000">
+                                </div>
+                            </div>
+
+                            <div class="flex items-start mt-6">
+                                <div class="flex items-center h-5">
+                                    <input id="declaration" type="checkbox" required class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="declaration" class="font-medium text-gray-700">Declaration</label>
+                                    <p class="text-gray-500">I hereby declare that all the information provided above is true to the best of my knowledge. I understand the application fee is non-refundable.</p>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-gray-200 flex justify-end">
+                                <button type="submit" class="bg-blue-900 text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-900 transition shadow-lg w-full md:w-auto">
+                                    Submit Application & Pay Fee
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-blue-950 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-bold serif-font mb-4">Visvesvaraya National Institute of Technology</h3>
+                    <p class="text-blue-200 text-sm mb-4 max-w-sm">
+                        South Ambazari Road, Nagpur, Maharashtra. Pin 440010 (India)<br>
+                        Phone: +91-712-2801370
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li><a href="#" class="hover:text-white">Admissions</a></li>
+                        <li><a href="#" class="hover:text-white">Tenders</a></li>
+                        <li><a href="#" class="hover:text-white">RTI Act</a></li>
+                        <li><a href="#" class="hover:text-white">Alumni</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Use</a></li>
+                        <li><a href="#" class="hover:text-white">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-blue-800 text-center text-sm text-blue-300">
+                &copy; 2026 VNIT Nagpur. All rights reserved. Designed & Developed exclusively for administrative tracking.
+            </div>
+        </footer>
+    </div>
+
+    <!-- PRANK SCREEN (Hidden initially) -->
+    <div id="prank-screen" class="hidden fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden">
+        <!-- Confetti layer -->
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-50 bg-[url('https://media.giphy.com/media/xT0xeJpnrWC4XWblza/giphy.gif')] bg-cover mix-blend-screen"></div>
+        
+        <div class="z-10 bg-white p-8 md:p-12 rounded-3xl shadow-2xl text-center max-w-2xl mx-4 border-8 border-black pop-in relative">
+            <div class="absolute -top-12 -right-12 text-6xl transform rotate-12 drop-shadow-lg">🤣</div>
+            <div class="absolute -bottom-10 -left-10 text-6xl transform -rotate-12 drop-shadow-lg">🤡</div>
+            
+            <img src="https://images.unsplash.com/photo-1508344928928-7137b29de216?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Joker Clown" class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full mx-auto mb-6 border-8 border-red-500 shadow-xl object-top">
+            
+            <h1 class="text-5xl md:text-7xl font-black text-red-600 mb-2 shake-text" style="font-family: 'Comic Sans MS', cursive, sans-serif;">
+                APRIL FOOLS!
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+                NICE TRY! 🤡🤡🤡
+            </h2>
+            
+            <p class="text-lg md:text-xl text-gray-600 font-medium mb-6">
+                Did you <span class="italic underline text-red-500">really</span> think an engineering NIT was going to rescue you from your private medical college? 😂 Go back to studying bones and herbs!
+            </p>
+            
+            <div class="bg-gray-100 p-4 rounded-lg mt-6 inline-block">
+                <p class="text-sm text-gray-500 font-bold uppercase tracking-widest">Get back to your lectures!</p>
+            </div>
+
+            <button onclick="location.reload()" class="mt-8 bg-black text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-800 transition transform hover:scale-105">
+                Restart Prank
+            </button>
+        </div>
+    </div>
+
+    <!-- Initialization Scripts -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Prank Logic
+        document.getElementById('prank-form').addEventListener('submit', function(event) {
+            // Stop the form from actually submitting
+            event.preventDefault();
+
+            // Hide official website
+            document.getElementById('official-website').style.display = 'none';
+
+            // Show prank screen
+            const prankScreen = document.getElementById('prank-screen');
+            prankScreen.classList.remove('hidden');
+            
+            // Scroll to top to ensure they see the modal fully
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>
